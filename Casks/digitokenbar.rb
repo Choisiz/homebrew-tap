@@ -12,9 +12,15 @@ cask "digitokenbar" do
 
   app "DigiTokenBar.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/DigiTokenBar.app"],
+                   sudo: false
+  end
+
   caveats <<~EOS
     This app is ad-hoc signed and is not Apple-notarized.
-    If macOS blocks a trusted download, use System Settings > Privacy & Security > Open Anyway.
+    This cask removes only the quarantine attribute from DigiTokenBar.app after installation.
     First artwork display requires internet access.
   EOS
 end

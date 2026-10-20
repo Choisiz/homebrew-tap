@@ -11,8 +11,11 @@ brew install --cask choisiz/tap/digitokenbar
 ```
 
 Open **DigiTokenBar** from Applications. Homebrew verifies the download checksum automatically.
-The app is ad-hoc signed, without Developer ID signing or Apple notarization. If macOS blocks
-a trusted download, follow [Apple's Open Anyway instructions](https://support.apple.com/102445).
+The app is ad-hoc signed, without Developer ID signing or Apple notarization.
+This cask removes only `com.apple.quarantine` from the installed DigiTokenBar app,
+matching the upstream installation approach without clearing other attributes.
+It does not disable Gatekeeper globally or grant Apple notarization. If macOS blocks
+a trusted direct download, follow [Apple's Open Anyway instructions](https://support.apple.com/102445).
 First artwork display requires internet access.
 
 ## Update
