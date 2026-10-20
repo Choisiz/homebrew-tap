@@ -1,6 +1,6 @@
 cask "digitokenbar" do
-  version "0.1.0"
-  sha256 "fc52b114a49fac121552159697485c5d330a455c77240a4c6fe27d6ebef63121"
+  version "0.1.1"
+  sha256 "5de53a197dd9b0a51e97b658f8872a4d0b3dbfaf4778fcb188f2fc092af4d8ae"
 
   url "https://github.com/Choisiz/DigiTokenBar/releases/download/v#{version}/DigiTokenBar-#{version}-macos-arm64.zip"
   name "DigiTokenBar"
