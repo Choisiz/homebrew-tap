@@ -8,7 +8,7 @@ cask "digitokenbar" do
   homepage "https://github.com/Choisiz/DigiTokenBar"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "DigiTokenBar.app"
 
