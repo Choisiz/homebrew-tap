@@ -2,10 +2,10 @@ cask "digitokenbar" do
   version "0.1.1"
   sha256 "5de53a197dd9b0a51e97b658f8872a4d0b3dbfaf4778fcb188f2fc092af4d8ae"
 
-  url "https://github.com/Choisiz/DigiTokenBar/releases/download/v#{version}/DigiTokenBar-#{version}-macos-arm64.zip"
-  name "DigiTokenBar"
+  url "https://github.com/Choisiz/DigiMonTokenBar/releases/download/v#{version}/DigiTokenBar-#{version}-macos-arm64.zip"
+  name "DigiMonTokenBar"
   desc "Digimon menu bar companion powered by local AI coding token usage"
-  homepage "https://github.com/Choisiz/DigiTokenBar"
+  homepage "https://github.com/Choisiz/DigiMonTokenBar"
 
   depends_on arch: :arm64
   depends_on macos: :sonoma
